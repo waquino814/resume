@@ -178,6 +178,65 @@ h6,
     left: 50px; }
 
 /*----------------------
+----- Contact Styles ----
+------------------------*/
+#contact {
+  background-color: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
+#contact .contact-text {
+  font-size: 16pt;
+  line-height: 34px;
+  margin-bottom: 30px;
+  text-align: justify; }
+
+#contact .contact-list {
+  padding-left: 0px; }
+
+#contact .contact-list li {
+  margin-bottom: 30px;
+  font-size: 16pt;
+  list-style: none; }
+
+#contact .contact-list i {
+  display: inline-block;
+  color: #fff;
+  font-size: 22pt;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #FF6F00;
+  border-radius: 50% 50% 0 50%;
+  margin-right: 5px;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+#contact .contact-list a {
+  color: #6d6d6d;
+  text-decoration: none; }
+
+#contact .contact-list a:hover {
+  color: #FF6F00; }
+
+#contact .contact-list a:hover i {
+  background: #FFA000;
+  border-radius: 50% 50% 50% 50%; }
+
+/*-------------------
+---- GMap Styles ----
+---------------------*/
+#gmap {
+  display: block;
+  width: 100%;
+  height: 550px;
+  margin: 0 auto;
+  border-radius: 50% 50% 0 50%;
+  border: 10px solid #FF6F00; }
+
+/*----------------------
 ----- Footer Styles ----
 ------------------------*/
 #main-footer {
@@ -220,9 +279,36 @@ h6,
   background: #FFA000;
   border-radius: 50% 50% 50% 50%; }
 
-@media (max-width: 576px) {
-  nav .container {
-    width: 100%; } }
+/*----------------------
+----- Media Queries ----
+------------------------*/
+@media (max-width: 1199px) {
+  #gmap {
+    height: 460px; }
+  #contact .contact-text {
+    font-size: 13pt;
+    line-height: 28px; } }
+
+@media (max-width: 991px) {
+  .big-text {
+    font-size: 30pt;
+    line-height: 40px;
+    margin-bottom: 30px; }
+  #about .image {
+    width: 250px; }
+  .chart {
+    margin-bottom: 60px; }
+  .skill10 p, .chart p {
+    font-size: 24pt; }
+  #gmapMobil {
+    height: 300px;
+    width: 100%; }
+  #main-footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative; }
+  #main-footer p, #main-footer p a {
+    font-weight: 500; } }
 
 @media (max-width: 767px) {
   .big-text {
@@ -238,4 +324,38 @@ h6,
   #home h1, #home h2 {
     font-size: 20pt; }
   #home h2 {
-    left: 0px; } }
+    left: 0px; }
+  #about .about-text {
+    font-size: 14pt; }
+  #about .timeline {
+    margin-left: 35px; }
+  #about .imageCont {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg); }
+  #skills .skill10 {
+    font-size: 16pt; }
+  #filter-works ul li {
+    display: block;
+    margin: 0px; }
+  #filter-works ul li a {
+    padding: 5px 0px; }
+  #projects-container .project-item {
+    width: 250px; }
+  .modal-header h4 {
+    margin: 10px;
+    font-size: 10pt;
+    border: 2px solid #fff; }
+  .modal-header h4 span {
+    font-size: 9pt;
+    border: 2px solid #fff; }
+  #contact .contact-text {
+    font-size: 14pt;
+    line-height: 24px; }
+  #contact .contact-list li {
+    font-size: 14pt; } }
