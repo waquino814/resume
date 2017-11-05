@@ -273,6 +273,13 @@ h6,
     background:#FFA000;
     border-radius:50% 50% 50% 50%;
 }
+/*---------------
+My Work
+----------------*/
+#portfolio{
+    a{color: #6d6d6d;}
+}
+
 /*-------------------
 ---- GMap Styles ----
 ---------------------*/
@@ -336,10 +343,15 @@ h6,
     border-radius:50% 50% 50% 50%;
 }
 
+
 /*----------------------
 ----- Media Queries ----
 ------------------------*/
-
+@media(max-width:576px){
+    nav .container {
+        width: 100%;
+    }
+}
 @media (max-width:1199px){
     
     #gmap{
